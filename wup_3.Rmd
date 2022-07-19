@@ -46,6 +46,19 @@ Though the "middle" seat row has the most people(n=83), the "back" seat row had 
 
 
 ## Inferential Tests
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+Low P-value indicates issue in data and warrants further statistical testing through a TurkeyHSD test.
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+The front-back data consistently yeilds a negative number, indicating that ther is a difference between the alcohol consumption of the "front" seats and the "middle" seats; this observation also persists of the middle-back data.
+
 
 ## Conclusions
 
