@@ -62,4 +62,6 @@ The front-back data consistently yeilds a negative number, indicating that ther 
 
 ## Conclusions
 
+By analyzing the boxplots, numerical data, and analysis of variance (TurkeyHSD) tests, it's clear that the differences between the "back" and "middle"/"front" seats are significant. Therefore it's logical to presume that those in the "back" seats on the bus consumme more alcohol than their counterparts seated in the "front" and "middle" seats of the bus.
+
 
