@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Your Name"
-date: "Fall 2020"
+author: "Rachel Polack"
+date: "Summer 2022"
 output: html_document
 ---
 
@@ -34,6 +34,8 @@ basicCN + geom_boxplot()
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
+
+The median and first/third percentile for the "back" seat boxplot are significantly higher as compared to the "middle" and "front" seats, including the max. The "front" seat data seemed to have the lowest median and maximum, while the "middle" seat had the most outliners. The people in the "back" seats seemed to consume more alcohol as compared to the people in the "front" and "middle" seats.
 
 ## Numerical Summarys 
 
