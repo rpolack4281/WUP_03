@@ -38,6 +38,12 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 The median and first/third percentile for the "back" seat boxplot are significantly higher as compared to the "middle" and "front" seats, including the max. The "front" seat data seemed to have the lowest median and maximum, while the "middle" seat had the most outliners. The people in the "back" seats seemed to consume more alcohol as compared to the people in the "front" and "middle" seats.
 
 ## Numerical Summarys 
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+
+Though the "middle" seat row has the most people(n=83), the "back" seat row had the highest median, q3, max, mean, and sd suggesting that those in the "back" had higher levels of alcohol comsumption.
+
 
 ## Inferential Tests
 
